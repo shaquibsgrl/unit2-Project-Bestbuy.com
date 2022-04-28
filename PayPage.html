@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payPage</title>
+    <script src="https://kit.fontawesome.com/108986b881.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="PayPage.css">
+</head>
+<body>
+    <div id="mainbody">
+        <div id="left">
+            <p class="blue"><i class="fas fa-angle-left"></i><b>Back to Pickup & Delivery Options</b></p>
+            <h2>How do you want to pay today?</h2>
+            <hr>
+            <form action="">
+            <h3>Credit or Debit Card</h3>
+            <input id="c_d" type="number" placeholder=""/>
+            <div>
+                <img class=paycard src="https://purepng.com/public/uploads/large/purepng.com-credit-cardobjectsdiamond-ringcardobjectbankcreditatmdebit-631522323297n1nru.png" alt="image">
+                <img class=paycard src="https://purepng.com/public/uploads/large/purepng.com-credit-cardobjectsdiamond-ringcardobjectbankcreditatmdebit-631522323297n1nru.png" alt="image">
+                <img class=paycard src="https://www.entrechiquitines.com/en/wp-content/uploads/2020/10/97984f77b2b1c41dc5d8031dcdd9a978_content_img_1356958083961-1.jpg" alt="image">
+                <img class=paycard src="https://www.creditcardinsider.com/wp-content/uploads/2018/10/Old-Visa-Logo-e1539377869237.png" alt="image">
+                <img class=paycard src="https://logodix.com/logo/780308.png" alt="image">
+                <img class=paycard src="https://image3.mouthshut.com/images/ImagesR/2009/2/American-Express-Credit-Card-925006382-2006139-2.jpg" alt="image">
+                <img class=paycard src="http://www.koalarentals.com.au/wp-content/uploads/2015/12/UnionPay-card-1127132416-400x300.png" alt="image">
+                <img class=paycard src="https://logos-download.com/wp-content/uploads/2016/04/JCB_logo_logotype_emblem_Japan_Credit_Bureau.png" alt="image">   
+            </div>
+            <p id="bg">Use a <b>My Best Buy*Credit Card</b>& get Rewards or Flexible Financing</p>
+            <hr class="line">
+            <p class="blue">Other payment options</p>
+            <hr class="line">
+            <p class="blue">Use a Best Buy Gift Card, Discount Code or Store Credit</p>
+            <h2><b>Billing Address</b></h2>
+            <div id="name">
+                <h3><b>First Name</b></h3>
+                <h3><b>Last Name</b></h3>
+            </div>
+            <div id="box">
+                <input id="firstname"type="text" placeholder="">
+                <input id="lastname" type="text" placeholder="">
+            </div>
+            <h3><b>Address</b></h3><p class="blue">Military(AFO,FPO) | International Customers</p>
+            <input id="Add" type="text" placeholder="">
+            <p class="blue">Add Apt #, Suite,Floor(optional)</p>
+            <div id=city>
+                <h3><b>City</b></h3>
+                <h3><b>State</b></h3>
+                <h3><b>ZIP Code</b></h3>
+            </div>
+            <div id="box1">
+                <input id="city1" type="text" placeholder="">
+                <select>
+                    <option value="select">select</option>
+                    <option value="select">Al</option>
+                    <option value="select">AK</option>
+                    <option value="select">AS</option>
+                    <option value="select">AZ</option>
+                    <option value="select">AR</option>
+                    <option value="select">AA</option>
+                    <option value="select">AE</option>
+                    <option value="select">AP</option>
+                    <option value="select">CA</option>
+                    <option value="select">CO</option>
+                    <option value="select">CT</option>
+                    <option value="select">DE</option>
+                    <option value="select">FL</option>
+                    <option value="select">GA</option>
+                    <option value="select">GU</option>
+                    <option value="select">HI</option>
+                    <option value="select">ID</option>
+                    <option value="select">IL</option>
+                    <option value="select">IN</option>
+                </select>
+                <input id="zip" type="number"placeholder="">
+            </div>
+            <div id="check">
+                <input type="checkbox"><p>Remember this information for next time</p>
+            </div>
+                <br><br><br>
+                <h2><b>Your Offers &  Rewards</b></h2>
+                <p>member #5174896572</p>
+                <br><h3><b>You don't have any reward certificates.</b></h3>
+                <p class="blue">Missing a certificate?</p>
+                <br><br>
+                <p>By placing your order, agree to our BestBuy.com Terms and Conditions and our Privacy Policy.</p>
+                <input onclick="gotosuccess()" id="sumbit"type="sumbit" value="Place Your Order">
+        </form>
+        </div>
+
+        <div id="right">
+            <h3><b>Order Summary</b></h3>
+            <div id="boxright1">
+                <p><b>Store Pickup</b></p><p style="color: blue;">Edit</p>
+            </div>
+            <p>Aiea</p>
+            <p>Available Tomorrow</p>
+            <div id="mainright">
+            <div id="boxright2">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt502352-sony_DER-7b381680-0834-42d9-92d2-4bcbce35cc4f.jpg;maxHeight=302;maxWidth=504" >
+                <p>Samsung - 43" Class 7 Series LED 4K UHD Smart Tizen TV</p>
+            </div>
+            <div id="boxright3">
+                <h4>$329.99</h4>
+                <p>Qty 1</p>
+                <p style="color: blue;">Remove</p>
+            </div>
+        </div>
+            <p style="color: blue;">Add a gift receipt</p>
+            <hr>
+            <div id="mainright2">
+            <div id="boxright4">
+                <p>Item Subtotal</p>
+                <p>store Pickup</p>
+                <p style="color: blue;">Estimated sales tax</p>
+                <p style="color: blue;">Apply aBest Buy Tax Exempt Account Number</p>
+            </div>
+            <div id="boxright5">
+                <p>$329.99</p>
+                <p>FREE</p>
+                <p>$15.55</p>
+                <i class="fas fa-angle-down"></i>
+            </div>
+        </div>
+        <hr>
+        <p style="color: green;">You're saving $70 on your order today!</p>
+    
+        </div>
+    </div>
+</body>
+</html>
+<script>
+// ---------------header----------------------
+
+var image=document.createElement("img");
+image.setAttribute("src","https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png");
+
+var head1= document.createElement("p");
+head1.textContent="CheckOut";
+
+var para=document.createElement("p");
+para.textContent="Return to Cart"
+
+document.querySelector("#container").append(image,para);
+
+// ----------------------------header end----------------------------
+
+    document.querySelector("form").addEventListener("submit",FormSubmit);
+    var userStack=JSON.parse(localStorage.getItem("userDataBase"))||[];
+
+    function FormSumbit(event){
+        event.preventdefault();
+        var card= document.querySelector("#c_d").value;
+        var first=document.querySelector("#firstname").value;
+        var last= document.querySelector("#lastname").value;
+        var Add=document.querySelector("#Add").value;
+        var city= document.querySelector("#city1").value;
+        var zip=document.querySelector("#zip").value;
+
+        var user_Data={
+            cards: card,
+            first: firstname,
+            last: lastname,
+            Address: Add,
+            city: city1,
+            zipcode: zip,
+        }
+        userStack.push(user_Data);
+        localStorage.setItem("userDataBase",JSON.stringify(userStack));
+        console.log(userStack)
+    }
+
+    function gotosuccess(){
+        window.location.href="SuccessPage.html"
+    }
+
+</script>

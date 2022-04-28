@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+    <style>
+        body{
+            background-color: rgb(243, 237, 237);
+        }
+         #body{
+            width: 450px;
+            background-color: #fff;
+            margin: 5% auto ;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+        }
+        .entry{
+            position: relative;
+        }
+        .input{
+            border: 2px solid rgb(3, 3, 54);
+            border-radius: 5px;
+            width: 80%;
+            padding: 15px;
+            margin: 5px 0;
+            font-size: 20px;
+             
+        }
+        .label{
+            position: absolute;
+            color: rgb(216, 137, 127);
+           margin-top: 21px ;
+            left: 45px;
+            font-size: 20px;
+            padding-top: 20px;
+            cursor : text;
+            transition: transform 200ms ease-in-out;
+        }
+         
+        .input:focus+.label
+        /* .input:not(.label).label:not(:focus)+.label */
+        {
+            margin-top: -27px;
+            background-color: #fff;
+            font-size: 20px;
+            color: rgb(146, 142, 142);
+        }
+        .signin-btn{
+            border: 1px solid rgb(49, 91, 228);
+            border-radius: 5px;
+            width: 90%;
+            padding: -10px;
+            margin: 10px 0;
+            background-color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            color: rgb(11, 11, 161);
+           }
+        .signin-btn:hover{
+            background-color: rgb(22, 9, 70);
+            color: #fff;
+        }
+        #signin{
+            background-color: rgb(73, 73, 243);
+            color: #fff;
+           border-color: transparent;
+        }
+        #signin:hover{
+                background-color: rgb(4, 15, 114);
+            }
+        hr{
+            margin-top: 20px;
+            width: 90%;
+        }
+        a{
+            text-decoration: none;
+             color: rgb(46, 125, 190);
+        }
+        .or{
+            background-color: #fff;
+            width: 80px;
+            margin: -25px auto 10px;
+           
+        }
+        .show{
+            font-size: 20px;
+            text-align: right;
+            padding-right: 35px;
+            
+        }
+     .forgot{
+         text-align: left;
+         padding-left: 35px;
+          
+         font-size: 18px;
+     }
+     #apple{
+         border-color: black;
+         color: black;
+     }
+     #apple:hover{
+         background-color: black;
+         color: #fff;
+     }
+     .end{
+         text-align: left;
+        padding-left: 20px;
+       margin-top: 0px;
+     }
+     .box{
+         position: relative;
+         display: flex;
+         
+     }
+     .box input{
+         margin-top: 27px ;
+         margin-left: 300px;
+     }
+     .box label{
+    right: -530px;
+    top: 20px;
+    margin-top:25px ;
+     }
+     #container{
+            background-color: blue;
+            color: white;
+            display: flex;
+            font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+            /* align-content: flex-end; */
+            justify-content: space-between;
+        }
+        img{
+            width: 6%;
+            height: 60px;
+            margin-left: 4%;
+            margin-top: 1%;
+        }
+        #success{
+            color:rgb(29,37,44) ;
+            margin-left: 35%;
+        }
+        p{
+            font-size: larger;
+            margin-right: 4%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <div id="success"></div>
+    <div id="body">
+    <h1>Sign In to Best Buy</h1> 
+    <form>
+        <div class="entry">
+        <input type="email" onchange="eMail()"  placeholder="" class="input" id="mail">
+        <label class="label" for="">Email Address</label>
+        <div class="box">
+            <br><br>
+            <input type="checkbox" name=""   onclick="myFunction()">
+            <label   >Show password</label>
+    </div>
+    <br>
+        <input type="password" onchange="eMail()"   placeholder="" class="input" id="Show">
+        <label class="label" for="">Password</label>
+        <P class="forgot"><a href="#" >Forgot your password?</a></P>
+        <button id="signin" type="submit" class="signin-btn"><h3>Sign In</h3></button>
+        <hr>
+        <h3 class="or">or</h3>
+        <button type="button" class="signin-btn"><h3>Sign In with WebAuthn</h3></button>
+        <button type="button" id="apple" class="signin-btn"><h3>Sign In with Apple</h3></button>
+        <button type="button" class="signin-btn"><h3>Sign In with Google</h3></button>
+        <p class="end">By continuing you agree to out <a href="tAndC.html">Terms and conditions</a>
+            . our<a href="privacy.html"> Privacy policy</a>. and the <a href="bestbuy.html">My Best Buy* Program Terms.</a> </p>
+      <hr>
+      <h3  class="end">Don't have any account? <a href="account.html">Create an account </a></h3>
+    </div>
+    
+    </form>  
+</div>
+</body>
+</html>
+<script type="text/javascript">
+     // header
+   var image=document.createElement("img");
+image.setAttribute("src","https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png");
+
+// var head1= document.createElement("p");
+// head1.textContent="CheckOut";
+
+var para=document.createElement("p");
+para.textContent="Return to cart"
+
+document.querySelector("#container").append(image,para)
+// header end
+   
+   var email= document.getElementById("mail").value;
+    var password= document.getElementById("Show").value;
+    function eMail(){
+        var email= document.getElementById("mail").value;
+    var password= document.getElementById("Show").value;
+        console.log(email,password,"a");
+        
+    }
+    
+    function myFunction(){
+        var show = document.getElementById('Show');
+        console.log(show)
+        if(show.type==='password') {
+            show.type='text';
+        }
+        else{
+            show.type='password';
+        }
+        
+    }
+    document.querySelector("form").addEventListener("submit", signin);
+
+var allUsers = JSON.parse(localStorage.getItem("userDataStack"));
+console.log(allUsers)
+function signin(event) {
+  event.preventDefault();
+  var email = document.querySelector("#mail").value;
+  var pass = document.querySelector("#Show").value;
+    for (var i = 0; i < allUsers.length; i++) {
+   
+    if (allUsers[i].emailAdd == email && allUsers[i].passwd == pass) {
+      window.location.href = "navbar.html";
+      console.log(allUsers[i].emailAdd, allUsers[i].passwd);
+      alert("signin success")
+    }
+    
+     
+  }
+}
+  
+</script>

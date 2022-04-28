@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <style>
+        body{
+            background-color: rgb(243, 237, 237);
+        }
+         .acc{
+            width: 450px;
+            background-color: #fff;
+            margin: 10% auto;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+        }
+        input{
+            border: 2px solid rgb(3, 3, 54);
+            border-radius: 5px;
+            width: 80%;
+            padding: 16px;
+            margin: 15px 0;
+            font-size: 20px;
+        }
+        .caa{
+            background-color: rgb(44, 44, 212);
+            color: #fff;
+        }
+        button{
+            border: 1px solid rgb(49, 91, 228);
+            border-radius: 5px;
+            width: 88%;
+            padding: 0px;
+            margin: 10px ;
+            background-color: #fff;
+            font-size: 15px;
+            cursor: pointer;
+            color: rgb(11, 11, 161);
+        }
+        button:hover{
+            background-color: rgb(22, 9, 70);
+            color: #fff;
+        }
+        ::placeholder{
+            font-size: 20px;
+            color: black;
+        }
+        .box{
+         position: relative;
+         display: flex;
+         padding: -5px;
+     }
+     .box input{
+         right: -10 px;
+         margin-top: 10px ;
+         margin-left: 100px;
+     }
+     .box label{
+    right: 50px;
+    top: 20px;
+    margin-left: -170px;
+    margin-top:5px ;
+    font-size: 20px;
+     }
+     .end{
+         text-align: left;
+        padding-left: 20px;
+       margin-top: 0px;
+       width: 80%;
+     }
+     hr{
+            margin-top: 20px;
+            width: 90%;
+        }
+        a{
+            text-decoration: none;
+             color: rgb(46, 125, 190);
+        }
+        #container{
+            background-color: blue;
+            color: white;
+            display: flex;
+            font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+            /* align-content: flex-end; */
+            justify-content: space-between;
+        }
+        img{
+            width: 6%;
+            height: 60px;
+            margin-left: 4%;
+            margin-top: 1%;
+        }
+        #success{
+            color:rgb(29,37,44) ;
+            margin-left: 35%;
+        }
+        p{
+            font-size: larger;
+            margin-right: 4%;
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <div id="success"></div>
+    <div class="acc">
+    <h1>Create an Account</h1>
+    <h3>Shopping for your business?<a href="#"> Create a business account.</a></h3>
+    <form>
+    
+            <input type="text" id="user1" placeholder="First Name">
+            <input type="text" id="user2" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email Address">
+            <div class="box">
+                <br><br>
+                <input type="checkbox" name=""   onclick="myFunction()">
+                <label   >Show password</label>
+        </div>
+            <input type="password" id="pass1" placeholder="Password">
+            <input type="password" id="pass2" placeholder="Confirm Password">
+            <input type="text" id="mbl" placeholder="Mobile Phone Number">
+            <button type="submit" class="caa"><h3>Create an Account</a></button>
+            <hr>
+            <button type="button"><h3>Sign In with Google</h3></button>
+            <p class="end">By continuing you agree to out <a href="tAndC.html">Terms and conditions</a>
+                . our<a href="privacy.html"> Privacy policy</a>. and the <a href="bestbuy.html">My Best Buy* Program Terms.</a> </p>
+          <hr>
+          <h3  class="end">Already have an account? <a href="signin.html">Sign in</a></h3>
+          
+        </form> 
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+      document.querySelector("form").addEventListener("submit", formSubmit);
+  var dataStack = JSON.parse(localStorage.getItem("userDataStack")) || [];
+  function formSubmit(event) {
+    event.preventDefault();
+    var email = document.querySelector("#email").value;
+    var pass = document.querySelector("#pass1").value;
+    var user = document.querySelector("#user1").value;
+    var user1 = document.querySelector("#user2").value;
+    var mbl = document.querySelector("#mbl").value;
+
+    var userData = {
+      emailAdd: email,
+      passwd: pass,
+      userName: user+" "+user1,
+      mblNum: mbl,
+    };
+
+    dataStack.push(userData);
+
+    console.log(dataStack);
+    localStorage.setItem("userDataStack", JSON.stringify(dataStack));
+    alert("Account created success");
+    window.location.href = "signin.html";
+  }
+    // var user1 = document.getElementById("user1").value;
+    // var user2 = document.getElementById("user2").value;
+    // var email = document.getElementById("email").value;
+    // var pass1 = document.getElementById("pass1").value;
+    // var pass2 = document.getElementById("pass2").value;
+    //  var mbl = document.getElementById("mbl").value;
+    
+    function myFunction(){
+         var show = document.getElementById('pass1');
+        var show1 = document.getElementById('pass2');
+        if(show.type==='password' ) {
+            show.type='text';
+            show1.type="text"
+        }
+        else{
+            show.type='password';
+            show1.type='password';
+        }
+         }
+             // header
+var image=document.createElement("img");
+image.setAttribute("src","https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png");
+
+// var head1= document.createElement("p");
+// head1.textContent="CheckOut";
+
+var para=document.createElement("p");
+para.textContent="Return to Back"
+
+document.querySelector("#container").append(image,para)
+// header end
+</script>

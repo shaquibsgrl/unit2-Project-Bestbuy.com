@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartPage</title>
+    <script src="https://kit.fontawesome.com/108986b881.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="cartPage.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <!-- navbar start here -->
+    <div class="nav-header">
+        <div class="upper-nav-bar">
+            <div class="left-container">
+                <div class="logo">
+                   <img src=" https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png" alt="logo">
+                </div>
+                <div class="humburger">
+                    <span>
+                        <i class="fa fa-bars"></i> <span>Menu</span>
+                    </span>
+                </div>
+                <div class="search-box">
+                    <form class="search-container">
+                        <input type="text" id="search-bar" placeholder="Search Best Buy">
+                        <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+                      </form>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="aiea">
+                    <i class="fas fa-2x fa-sim-card"></i> <span>Aiea</span>
+                </div>
+                <div class="cart">
+                    <link rel="stylesheet" href="navbar.css">
+                   <a href="CartPage.html"><i class="fas fa-2x fa-cart-plus"></i>  <span>Cart</span></a>
+                   <script src="https://kit.fontawesome.com/1762a97feb.js" ></script>
+                </div>
+            </div>
+        </div>
+        <div class="break"></div>
+        <div class="lower-nav-bar">
+            <ul>
+                <li><a href="#">Top Deals</a></li>
+                <li><a href="#">Deal of the Day</a></li>
+                <li><a href="#">Best Buy Totaltech</a></li>
+                <li><a href="#">Credit Cards</a></li>
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="#">Health & Wellness</a></li>
+                <li><a href="#">St. Jude</a></li>
+                <li><a href="#">Best Buy Business</a></li>
+            </ul>
+            <ul>
+                <li><a href="signin.html"><i class="fa fa-user-circle"></i>Account<i class="fa fa-chevron-circle-down"></i></a></li>
+                <li><a href="#">Recently Viewed <i class="fa fa-chevron-circle-down"></i></a></li>
+                <li><a href="#">Order Status<i class="fa fa-chevron-circle-down"></i></a></li>
+                <li><a href="#">Saved Items<i class="fa fa-chevron-circle-down"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navabar end here -->
+    <div id="mainbody">
+        <div id="left">
+            <h2><b>Your Cart</b></h2>
+            <div id="box1"></div>
+            <div id="box2"><p><i class="fa-solid fa-tag"></i><b>Special Offers</b> We found offers available based on items in your cart! See all</p></div>
+            <div id="box3">
+                <div id=boxTV>
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/dam/pol-mmt502352-sony_DER-7b381680-0834-42d9-92d2-4bcbce35cc4f.jpg;maxHeight=302;maxWidth=504" >
+                <a href="Tvspage.html">Save up to $700 on select Samsung, Sony and LG TVs.</a>
+                </div>
+                <div id="boxTV2">
+                    <input type="radio"><p>
+                        <b>Pickup atAiea</b> Aiea Ready for pickup Today Eligible for curbside pickup</p>
+                    <input type="radio"><p>
+                        Shipping to96939 96939 Unavailable in this area</p>
+                </div>
+                <div id="boxTV3">
+                    <select name="" id="select">
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                    </select>
+                    <a href="Remove"></a>
+                    <a href="Save"></a>
+                </div>
+                <div id="boxTV4">
+                    <h3><b>$329.99</b></h3>
+                    <h4 style="background-color: brown; color: white;">Save$70</h4>
+                    <p>was $399.00</p>
+                </div>
+            </div>
+            <div id="box4">
+                <div class="saveditems"><h2><i class="fa-thin fa-bookmark"></i> Saved Items </h2>  </div><hr>
+                <div class="center"><h2>Your list is currently empty</h2>
+                <p>Need inspiration? Check out recommended items, or search for items to save.</p>
+                </div>
+            </div>
+            <div id="box5">
+            </div>
+            <div id="box6">Get 2.5 points per $1 spent (5% back in rewards) on qualifying Best Buy® purchases when you
+            choose Standard Credit with your Best Buy Credit Card. Points are not awarded on promotional credit purchases.
+             Some products purchased at Pacific Sales® Kitchen & Home Stores are not eligible to get My Best Buy® rewards.
+             Does not include tax. Additional limitations may apply. Subject to My Best Buy Program Terms.</div>
+        </div>
+        <div id="right">
+            <h2>Order Summary</h2><hr>
+            <p class="bill">Original Price  $399.99 </p>
+            <p class="bill">Saving  -$70.00</p>
+            <p class="bill">Store Pickup  FREE</p>
+            <hr>
+            <h3 id="billing"><b></b></h3>
+            <div><section>
+            <button id="out"><a target="_blank" href="PayPage.html"><b> Checkout </b></button>
+            </section>
+            </div>
+            <button id="pal"><h3><b> PayPal</b></h3> <u>checkout</u></button>
+            <p>Sign in to get My Best Buy TM Points</p>
+            <hr>
+            <h3><b>Apply today, shop today.</b></h3>
+            <div>
+                <img id="image" src="https://v1.hdfcbank.com/assets/images/allmiles_credit_card.png" alt="image">
+                <p><b>10%back in rewards</b> on first day of purchases for new My Best Buy  Credit Card members </p>
+                <p style="color: rgba(0, 0, 255, 0.815);;">Show me how ></p>
+                <p><b>$28.80/mo.*</b>suggested monthly payments with <b>12 month financing</b> on this purchase of $345.54</p>
+                <hr>
+                <h3><b>Looking for a lease to own option?</b></h3>
+                <p>Enjoy the tech you want today.</p>
+                <p style="color: rgba(0, 0, 255, 0.815);">Learn more ></p>
+                <hr>
+                <h3><b>Buying a gift for someone special?</b></h3>
+                <p>Gift options can be added in checkout.</p>
+                <p style="color: rgba(0, 0, 255, 0.815);;">Learn more ></p>
+            </div>
+        </div>
+    </div>
+    <!-- footer start here -->
+    <footer style="background-color:  #CAD5E2; width: 100%">
+        <hr>
+        <br>
+        <br>
+        <div class="pdiv">
+            <div class="foot-icondiv">
+                <img class="div-image" src="https://cdn-icons-png.flaticon.com/128/950/950299.png">
+                <ul>
+                    <li><b><a style="text-align: center;" href="###">Visit Our Support Centre</a></b></li>
+                </ul>
+            </div>
+            <div class="foot-icondiv">
+                <img class="div-image" src="https://cdn-icons-png.flaticon.com/128/3143/3143190.png">
+                <ul>
+                    <div style="width: 100px; height:35px; margin-left: 20%;">
+                    <li>
+                        <b><a style="text-align: center;" href="###">Order Status</a></b>
+                    </li>
+                    </div>
+                </ul>
+                
+            </div>
+            <div class="foot-icondiv">
+                <img class="div-image" src="https://cdn-icons-png.flaticon.com/128/6615/6615016.png">
+                <ul>
+                    <div style="width: 150px; height:35px; margin-left: 15%;">
+                    <li>
+                        <b><a style="text-align: center;" href="###">Delivery & Shipping</a></b>
+                    </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="foot-icondiv">
+                <img class="div-image"
+                    src="https://cdn-icons.flaticon.com/png/128/1744/premium/1744001.png?token=exp=1642508383~hmac=d88198acd8166c6ae03e38c8b6170bd3">
+                <ul>
+                    <li><b><a style="text-align: center;" href="###">Visit Our Support Centre</a></b></li>
+                </ul>
+            </div>
+            <div class="foot-icondiv">
+                <img class="div-image" src="https://cdn-icons-png.flaticon.com/128/1728/1728536.png">
+                <ul>
+                    <li><b><a style="text-align: center;" href="###">Visit Our Support Centre</a></b></li>
+                </ul>
+            </div>
+
+        </div>
+        <hr style="width: 1250px; background-color: indigo;">
+        <!-- Start of Section part -->
+        <div class="gdiv-section">
+            <div class="pdiv-section">
+                <div class="section" style="height: 250px; width: 250px;display: inline-block; margin: 5px;">
+                    <h3 style="margin-left: 17.5%;"> Order Purchase</h3>
+                    <ul>
+                        <li style="margin: 3px;"><a href="###"> Check Order Status </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Shipping, Delivery & Pick Up </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Return & Exchange </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Price Match Gurantee </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Product Recalls </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Trade-In Program </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Gift Cards </a></li><br>
+                    </ul>
+                </div>
+
+
+                <div class="section" style="height: 250px; width: 250px; display: inline-block; margin: 5px;">
+                    <h3 style="margin-left: 17.5%;"> Support & Services</h3>
+                    <ul>
+                        <li style="margin: 3px;"><a href="###">Visit our Support Center</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Shop with an Expert</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Schedule a Service</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Manage an Appointment</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Protection & Support Plans</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Haul Away & Recycling</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Contact Us</a></li><br>
+                    </ul>
+                </div>
+
+
+                <div class="section" style="height: 250px; width: 250px;display: inline-block; margin: 5px;">
+                    <h3 style="margin-left: 17.5%;">Partnerships</h3>
+                    <ul>
+                        <li style="margin: 3px;"><a href="###"> Check Order Status </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Shipping, Delivery & Pick Up </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Return & Exchange </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Price Match Gurantee </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Product Recalls </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Trade-In Program </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Gift Cards </a></li><br>
+                    </ul>
+                </div>
+                <div class="section" style="height: 250px; width: 250px;display: inline-block; margin: 5px;">
+                    <h3 style="margin-left: 17.5%;"> Payment Options</h3>
+                    <ul>
+                        <li style="margin: 3px;"><a href="###">My Best BuyÂ® Credit Card</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Pay Your Bill at Citibank</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Lease to Own</a></li><br>
+                        <li style="margin: 3px;"><a href="###">UPI Transaction</a></li><br>
+                    </ul>
+                </div>
+                <div class="section" style="height: 250px; width: 250px;display: inline-block; margin: 5px;">
+                    <h3 style="margin-left: 17.5%;">Rewards & Membership</h3>
+                    <ul>
+                        <li style="margin: 3px;"><a href="###"> Check Order Status </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Shipping, Delivery & Pick Up </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Return & Exchange </a></li><br>
+                        <li style="margin: 3px;"><a href="###"> Price Match Gurantee </a></li><br>
+                    </ul>
+                </div>
+                <div class="section" style="height: 250px; width: 350px; display: inline-block; margin: 5px;">
+                    <h3 style="margin-left: 12%;">About Best Buy</h3>
+                    <ul>
+                        <li style="margin: 3px;"><a href="###">Corporate Information</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Careers</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Corporate Responsibility & Sustainability</a></li><br>
+                        <li style="margin: 3px;"><a href="###">Discover & Learn</a></li><br>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- SingIn & Account Section In Footer -->
+            <div style="background-color: lavender; box-shadow: rgb(207, 199, 202); width: 450px; display: inline-block; margin: 5px; height: 430px; ">
+                <br>
+                    <div style="margin-left: 6%;">
+                    <a style="text-decoration: none;" href="###">Sign In or Create Account</a>
+                    </div>
+                <!-- <br> -->
+                <hr style="width: 87%;">
+                <div style="margin-left: 6%;">
+                <h2><b>Get the latest deals and more.</b></h2>
+                </div>
+                <!-- Search Bar -->
+                <div style="width:400px; margin: auto;">
+                    <div style="width: 300px; height: 25px; display: inline-block; margin: 5px;">
+                        <input style="width: 300px; height: 35px; border-radius: 5px; border:1px;" type="email"
+                            placeholder="Enter a E-mail">
+                    </div>
+                    <div style="height: 25px; width: 75px; display: inline-block; margin: 5px;">
+                        <button style="background-color: rgb(65, 65, 197); margin: 1px; border-radius: 5px; border: 0px white; height: 25px;"><a style="text-decoration: none;" href="###">Sign Up</a></button>
+                    </div>
+                </div>
+                <!-- <br> -->
+                <hr style="width: 87%;">
+                <!-- Best Buy App Section  -->
+                <div style="width:300px;height:100px;margin: 30px;">
+                    <div style="display: inline-block; width: 60px;margin-right: 5px;">
+                        <img style="background-color: lavender; height: 80px; width: 60px;"
+                            src="https://cdn-icons.flaticon.com/png/128/5555/premium/5555377.png?token=exp=1642657434~hmac=e324bb12195635c367974dcc666eceff">
+                    </div>
+                    <div style="display: inline-block;height: 80px; width: 180px;margin: 10px;">
+                        <h2 style="text-align: center;"><a style="text-decoration: none;" href="###">Best Buying App
+                                </h3>
+                                <div style="width: 100px; height: 50px; margin: 1%;">
+                                    <a style="text-decoration: none;" href="###">Learn More</a>
+                                </div>
+                    </div>
+                </div>
+                <hr style="width: 87%;">
+                <!-- Social media Part -->
+            <div class="wrapper">
+                <div class="icon facebook">
+                    <div class="tooltip">
+                        Facebook
+                    </div>
+                    <span>
+                        <a href="https://www.facebook.com/bestbuy">
+                        <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="icon twitter">
+                    <div class="tooltip">
+                        Twitter
+                    </div>
+                    <span>
+                        <a href="https://www.twitter.com/bestbuy">
+                        <i class="fab fa-twitter"></i>
+                        </a>
+                    </span>
+                </div>
+                <div class="icon instagram">
+                    <div class="tooltip">
+                        Instagram
+                    </div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </div>
+                <div class="icon github">
+                    <div class="tooltip">
+                        pinterest
+                    </div>
+                    <span><i class="fab fa-pinterest"></i></span>
+                </div>
+                <div class="icon youtube">
+                    <div class="tooltip">
+                        YouTube
+                    </div>
+                    <span><i class="fab fa-youtube"></i></span>
+                </div>
+                
+            </div>
+            <hr style="width:87%;">
+            <div style="width: 150px; height: 20px;margin-left: 8%;">
+                <a href="###">Forums, Blogs & More</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+<script>
+    // left div mapping
+    var image= document.createElement("img");
+    image.setAttribute("src","https://businesstech.co.za/news/wp-content/uploads/2016/10/Call-centre-technology.jpg");
+     
+    var box1div=document.createElement("div");
+    box1div.setAttribute("class","box1div");
+
+    var h4=document.createElement("h4");
+    h4.textContent="Join Best Buy Totaltech™ and see the benefits today.";
+
+    var p1=document.createElement("p");
+    p1.textContent="24/7 tech support. Product protection. Free standard installation. And more.";
+
+    box1div.append(h4,p1)
+
+    var button=document.createElement("button");
+    button.textContent="Learn About Totaltech";
+
+    document.querySelector("#box1").append(image,box1div,button);
+//   div 1======================================================-----end
+
+var cartarray=JSON.parse(localStorage.getItem("cartitems"))||[];
+
+  cartarray.map(function (data) {
+      console.log(data)
+    var div1 = document.createElement("div");
+   
+    // var image = document.createElement("img");
+    // image.setAttribute("src", data.Image_url);
+
+    var name = document.createElement("p");
+    name.textContent = data.name;
+
+    var p1 = document.createElement("p");
+    p1.textContent = data.price;
+  
+    div1.append( name, p1,);
+    document.querySelector("#boxTV").append(div1);
+
+  });
+
+  var total=cartarray.reduce(function(acc,cv){
+      return acc+Number(cv.price)},0)
+
+      document.querySelector("#billing").textContent=`Total ${total}`
+
+//   -------------------div5-----------------------------------start=-----  
+    var data=[
+        {
+            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9881/9881868_rd.jpg;maxHeight=150;maxWidth=170",
+            info:   "Kanto - Full-Motion Wall Mount for Most 26 each 55 Flat-Panel TVs - Black",
+            price :  "$79.99",
+         },
+         {
+            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9881/9881868_rd.jpg;maxHeight=150;maxWidth=170",
+            info:   "Rocketfish™ - Tilting TV Wall Mount for Most 32 each 75 TVs - Black",
+            price :  "$99.99",
+         },
+         {
+            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6332/6332693ld.jpg;maxHeight=150;maxWidth=170",
+            info:   "Sanus - Premium TV Wall Mount for Most TVs 32 each 55 up to 55 lbs - Black Metal",
+            price :  "$130.99",
+         },
+         {
+            image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/3720/3720002_sd.jpg;maxHeight=150;maxWidth=170",
+            info:   "Rocketfish™ - 4' 4K UltraHD/HDR In-Wall Rated HDMI Cable - Black",
+            price :  "$29.99",
+         },
+    ]
+
+    data.map(function (elem) {
+        var div=document.createElement("div");
+
+        var image1= document.createElement("img");
+        image1.setAttribute("src",elem.image);
+        image1.setAttribute( "id", "image");
+
+        var info1= document.createElement("p");
+        info1.textContent = elem.info;
+
+        var price1=document.createElement("h4");
+        price1.textContent =elem.price;
+
+        var button=document.createElement("button");
+        button.textContent="Add to Cart";
+
+        div.append(image1,info1,price1,button);
+        document.querySelector("#box5").append(div);
+    })
+
+
+</script>

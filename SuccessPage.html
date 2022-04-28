@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuccessPage</title>
+    <style>
+        #container{
+            background-color: blue;
+            color: white;
+            display: flex;
+            font-family: Human BBY Digital,Human Fallback,Arial,Helvetica,sans-serif;
+            justify-content: space-between;
+        }
+        img{
+            width: 6%;
+            height: 60px;
+            margin-left: 4%;
+            margin-top: 1%;
+        }
+        #success{
+            color:rgb(29,37,44) ;
+        }
+        p{
+            font-size: larger;
+            margin-right: 4%;
+        }
+        h1,h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+</div>
+<div id="success"></div>
+</body>
+</html>
+<script>
+    // header
+var image=document.createElement("img");
+image.setAttribute("src","https://pisces.bbystatic.com/image2/BestBuy_US/Gallery/BestBuy_Logo_2020-190616.png");
+
+// var head1= document.createElement("p");
+// head1.textContent="CheckOut";
+
+var para=document.createElement("p");
+para.textContent="Return to Cart"
+
+document.querySelector("#container").append(image,para)
+// header end
+
+// body
+var head2=document.createElement("h1");
+head2.textContent="Your Order Is Successfully Placed";
+
+var head3=document.createElement("h2");
+head3.textContent="THANKYOU FOR SHOPPING";
+
+document.querySelector("#success").append(head2,head3);
+</script>
